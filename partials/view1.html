@@ -1,0 +1,14 @@
+<div class="container">
+	<h2>View 1</h2>
+	<p ng-repeat="cust in customers">{{cust.name}}</p>
+	<br/>
+	<h2>Add New Customer</h2>
+	Customer Name: <br/>
+	<input type="text" ng-model="newCustomer.name">
+	Customer City: <br/>
+	<input type="text" ng-model="newCustomer.city">
+	<br/>
+	<button ng-click="newCustomer()">Add Customer</button>
+	<br/>
+	<a href="#/view2">View2</a>
+</div>
